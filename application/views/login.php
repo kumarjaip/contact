@@ -19,7 +19,7 @@
         <h1>Welcome. Please Sign In</h1>
 		<?php echo form_open('login/login_user') ?>
         <ul class="margin10">
-            <li><input name="username" id="username" type="text" class="email wd247" value="Email" onblur="clickrecall(this,'Email')" onclick="clickclear(this, 'Email')" /></li>
+            <li><input name="username" id="username" type="text" class="email wd247" value="Email" onblur="clickrecall(this,'Email')" onclick="clickclear(this, 'Email')" autocomplete="off" /></li>
             <li><input name="password" id="password" type="password" class="pass wd247" value="password" onblur="clickrecall(this,'password')" onclick="clickclear(this, 'password')" /></li>
             <li><label><span class="floatL marginR5"><input name="" type="checkbox" value="" /></span>  <span class="floatL font11">Remember me</span></label><div class="clear"></div></li>
             <li><span class="floatL"><input name="submit" type="submit" class="login" value="Sign In" /></span>
@@ -30,7 +30,7 @@
         </form>
         <?php if (isset($error) && $error): ?>
           <div class="alert alert-error">
-            <a class="close" data-dismiss="alert" href="#">—</a>Incorrect Username or Password!
+            <a class="close" data-dismiss="alert" href="#"></a>Incorrect Username or Password!
           </div>
         <?php endif; ?>
     </div>

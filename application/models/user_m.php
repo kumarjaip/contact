@@ -58,6 +58,27 @@ class user_m extends CI_Model {
       return $result;
     }
 
+	public function get_all_users( $user_id, $num_posts = 10 ) {
+
+    	// start building a query
+    	$this->db->from('contactus_admin');
+
+    	// restrict to teammates if not an admin
+    	$this->db->where('contactus_admin.isActive','1');
+
+    	$this->db->where_not_in('adminid', array($user_id));
+    	$this->db->limit( $num_posts );
+    	$this->db->order_by('adminid','desc');
+
+    	$users = $this->db->get()->result_array();
+
+    	if( is_array($users) && count($users) > 0 ) {
+      		return $users;
+    	}
+
+    	return false;
+  	}
+
     private function getAvatar() {
       $avatar_names = array();
 
