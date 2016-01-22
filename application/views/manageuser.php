@@ -36,8 +36,8 @@ include ('template/header.php');
 			<div class="wd30 floatL marginL10"><input name="" type="checkbox" value="" /></div>
 			<div class="wd200 floatL marginL10"><?php echo $users['fullName'] ?></div>
 			<div class="wd260 floatL marginL10"><?php echo $users['email'] ?></div>
-			<div class="wd130 floatL marginL10"><?php echo ($users['phone']!="") ? $contact['phone'] : "NA"; ?></div>
-			<div class="wd220 floatL marginL10"><?php echo $users['isAdmin'] ?></div>
+			<div class="wd130 floatL marginL10"><?php echo ($users['phone']!="") ? $users['phone'] : "NA"; ?></div>
+			<div class="wd120 floatL marginL10"><?php echo $users['isAdmin'] ?></div>
 			<div class="wd100 floatL "><?php echo $users['updated'] ?></div>
 			<div class="clear"></div>
 		</div>
