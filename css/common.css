@@ -372,3 +372,37 @@
 
 /* 17Th Jan 2013 */
 .border{border:1px solid #bfbfbf;}
+
+/* added on 12th Feb 2015 for stat box at dasboard */
+.bg-red,
+.bg-aqua,
+.bg-green,
+.bg-yellow {
+    color: #fff !important;
+}
+
+.bg-red {
+    background-color: #dd4b39 !important;
+}
+
+.bg-yellow {
+    background-color: #f39c12 !important;
+}
+
+.bg-aqua {
+    background-color: #00c0ef !important;
+}
+
+.bg-green {
+    background-color: #00a65a !important;
+}
+
+.col-lg-3 {
+    width: 25%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}

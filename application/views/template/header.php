@@ -12,6 +12,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo $this->config->item('site_title');?>:: Admin Panel ::</title>
 <link href="<?php echo base_url();?>css/style.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url();?>css/font-awesome.css" rel="stylesheet" type="text/css" />
+<!-- Ionicons -->
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
 <script type="text/javascript" language="javascript" src="<?php echo base_url();?>js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" language="javascript" src="<?php echo base_url();?>js/common.js"></script>
 </head>
@@ -21,7 +25,7 @@
 
         <!-- Header Start -->
         <div id="header" class="marginT15">
-            <div class="logo floatL">tifososoft</div>
+            <div class="logo floatL"><img src="<?php echo base_url();?>images/logo.png" title="CashBack" height="60px"></div>
             <div class="wdAuto floatR">
                 <p class="colorWhite alignR">Signed in as  <?php echo $name; ?></p>
                 <div class="clear"></div>
